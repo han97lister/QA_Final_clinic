@@ -3,4 +3,6 @@
 az aks get-credentials --resource-group lastproject --name cluster
 cd terraform
 terraform init
-terraform apply
+terraform plan
+terraform apply -auto-approve
+cd ..
