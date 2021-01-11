@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 kubectl apply -f mysql.yaml
 kubectl apply -f backend.yaml
