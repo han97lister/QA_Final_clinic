@@ -22,6 +22,10 @@ export NVM_DIR="home/jenkins/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/.bashrc
 nvm install v14.5.0
+nvm use v14.5.0
+npm update
+npx npm-check-updates -u
+npm install
 
 echo "Installing Azure-CLI"
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
