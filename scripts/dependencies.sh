@@ -19,13 +19,9 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo bash
 echo "Installing Azure-CLI"
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
-echo "Installing Terraform"
-wget https://releases.hashicorp.com/terraform/0.12.12/terraform_0.12.12_linux_amd64.zip
-unzip terraform_*_linux_*.zip
-sudo mv terraform /usr/local/bin
-
 echo "Install Docker"
 curl https://get.docker.com | sudo bash
+sudo usermod -aG docker jenkins
 
 echo "Install Docker Compose"
 version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
@@ -37,7 +33,7 @@ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s ht
 sudo mv kubectl /usr/local/bin/kubectl
 sudo chmod a+x /usr/local/bin/kubectl
 
-echo "Refrshing Angular"
+echo "Refreshing Angular"
 sudo npm uninstall -g angular-cli @angular/cli
 sudo npm cache clean
 sudo npm install -g @angular/cli@latest
