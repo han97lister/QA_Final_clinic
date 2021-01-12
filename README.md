@@ -48,4 +48,4 @@ v1.0
 
 Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
 
-[pipeline]: https://imgur.com/nL2vdyB.png
+[pipeline]: https://imgur.com/cO2YN1k.png
