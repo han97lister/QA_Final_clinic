@@ -1,11 +1,11 @@
-# QA Final Project -
+# QA Final Project
 **Spring Pet Clinic** _By Team 3_
 
 ## Authors
-Joshua Cashen
-Isaac Lister
-Hannah Lister-Sims
-Alexander Smith
+Joshua Cashen  \
+Isaac Lister  \
+Hannah Lister-Sims  \
+Alexander Smith  \
 
 ## Version
 v1.0
