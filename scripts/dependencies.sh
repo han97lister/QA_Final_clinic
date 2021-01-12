@@ -7,6 +7,9 @@ fi
 
 echo "Running Prerequisites"
 sudo apt update
+sudp apt-get -y upgrade
+sudo apt install -y curl
+sudo apt install -y unzip wget
 #sudo DEBIAN_FRONTEND=noninteractive apt-get update -qq < /dev/null > /dev/null
 #sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq ca-certificates jq curl apt-transport-https lsb-release gnupg nodejs git openjdk-8-jre maven unzip< /dev/null > /dev/null
 
@@ -42,3 +45,7 @@ sudo npm install -g @angular/cli@latest
 echo "Installing Testing Frameworks"
 sudo npm install karma 
 sudo npm install -g protractor
+
+echo "installing java"
+sudo apt install -y default-jdk
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
