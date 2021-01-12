@@ -5,7 +5,7 @@
 Joshua Cashen  \
 Isaac Lister  \
 Hannah Lister-Sims  \
-Alexander Smith  \
+Alexander Smith  
 
 ## Version
 v1.0
