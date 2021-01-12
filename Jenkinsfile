@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Terraform') {
-            steps {
-                sh "./scripts/terraform.sh"
-            }
-        }
         stage('Dependencies') {
             steps {
                 sh "./scripts/dependencies.sh"
+            }
+        }
+        stage('Terraform') {
+            steps {
+                sh "./scripts/terraform.sh"
             }
         }
         stage('Test') {
