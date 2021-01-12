@@ -22,6 +22,12 @@ Risk Assessment: https://docs.google.com/spreadsheets/d/128TcehtL_puDUwLKvUdLhTt
 * [Expenses](#expenses)
 * [Version Control](#version-control)
 
+## Brief
+### Project Brief
+
+This project is a group challenge to work to a deliverable with time constraints, providing a robust deployment with consistent method and CI pipeline.
+A monthly estimate of cost should be made for the projects, risks should be assessed and issues and improvements discussed. We should implement a Webhook with GitSCM to enable rolling updates when code is pushed to the repository. We should justify our usage of chosen technologies; and provide multiple environment support for both testing and live.
+
 ## Authors
 Joshua Cashen  \
 Isaac Lister  \
