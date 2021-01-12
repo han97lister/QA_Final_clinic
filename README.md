@@ -10,6 +10,6 @@ Alexander Smith
 ## Version
 v1.0
 
-## Acknowledgments
+## Acknowledgements
 
 Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
