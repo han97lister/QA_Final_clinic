@@ -1,5 +1,15 @@
-# QA_Final_clinic
+# QA Final Project -
+**Spring Pet Clinic** _By Team 3_
 
-Terraform - Terraform allows you to control your infrastructure on the cloud service provider.
+## Authors
+Joshua Cashen
+Isaac Lister
+Hannah Lister-Sims
+Alexander Smith
 
-the reason we used terraform is 
+## Version
+v1.0
+
+## Acknowledgments
+
+Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
