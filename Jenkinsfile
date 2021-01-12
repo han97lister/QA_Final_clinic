@@ -6,6 +6,11 @@ pipeline {
                 sh "./scripts/terraform.sh"
             }
         }
+        stage('Dependencies') {
+            steps {
+                sh "./scripts/dependencies.sh"
+            }
+        }
         stage('Test') {
             steps {
                 sh "./scripts/test.sh"
