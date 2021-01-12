@@ -39,6 +39,15 @@ Here is a more in-depth view of our Kubernetes Cluster configuration, from an en
 ![cluster][cluster]  \
 _Configuration of a K8s cluster_
 
+### Risk Assessment
+
+We have performed a full risk assessment before attempting deployment. Those risks which are not currently mitigated and require revisiting will be revisited after deployment.
+A link to our risk assessment (pre-revisit) is available in the Resources section.
+Please find a screenshot below:
+
+![risk][risk]
+
+
 ## Authors
 Joshua Cashen  \
 Isaac Lister  \
@@ -54,3 +63,4 @@ Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
 
 [pipeline]: https://imgur.com/cO2YN1k.png
 [cluster]: https://imgur.com/hxL7Lxu.png
+[risk]: https://imgur.com/ogn761e.png
