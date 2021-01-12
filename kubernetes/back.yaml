@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clinic
+  labels:
+    app: clinic
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: clinic 
+  template:
+    metadata:
+      name: clinic
+      labels:
+        app: clinic
+    spec:
+      containers:
+      - name: clinic
+        image: (Docker Images)
+        ports:
+          - containerPort: 9966
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+   name: clinic
+   labels:
+     app: clinic      
+spec:
+   type: LoadBalancer
+   ports:
+     - protocol: TCP
+       port: 9966
+       targetPort: 9966
+   selector:
+     app: clinic
