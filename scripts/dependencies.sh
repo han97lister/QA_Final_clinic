@@ -17,7 +17,10 @@ echo "Installing npm"
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 #curl -sL https://deb.nodesource.com/setup_15.x | sudo bash
 #sudo apt-get install nodejs
-source ~/.profile
+export NVM_DIR="$HOME/.nvm"
+echo $(HOME)
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install v14.5.0
 
 echo "Installing Azure-CLI"
