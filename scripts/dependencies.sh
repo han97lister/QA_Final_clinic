@@ -14,7 +14,7 @@ sudo apt install -y unzip wget
 #sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq ca-certificates jq curl apt-transport-https lsb-release gnupg nodejs git openjdk-8-jre maven unzip< /dev/null > /dev/null
 
 echo "Installing npm"
-curl -sL https://deb.nodesource.com/setup_6.x | sudo bash
+curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt install nodejs
 
 echo "Installing Azure-CLI"
