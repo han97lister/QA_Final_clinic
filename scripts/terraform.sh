@@ -1,6 +1,6 @@
 #! /bin/bash
 
-az aks get-credentials --resource-group lastproject --name cluster
+az aks get-credentials --resource-group finalproject --name cluster
 cd terraform
 terraform init
 terraform plan
