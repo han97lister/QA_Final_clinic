@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-clinic
+  labels:
+    app: mysql-clinic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql-clinic 
+  template:
+    metadata:
+      name: mysql-clinic
+      labels:
+        app: mysql-clinic
+    spec:
+      containers:
+      - name: mysql-clinic
+        image: almathex/clinic-db
+        ports:
+          - containerPort: 3306
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+   name: mysql-clinic
+   labels:
+     app: mysql-clinic
+spec:
+   type: LoadBalancer
+   ports:
+     - protocol: TCP
+       port: 3306
+       targetPort: 3306
+   selector:
+     app: mysql-clinic
