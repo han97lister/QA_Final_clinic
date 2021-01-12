@@ -8,14 +8,17 @@ fi
 echo "Running Prerequisites"
 sudo apt update
 sudp apt-get -y upgrade
-sudo apt install -y curl
+sudo apt-get install -y curl
 sudo apt install -y unzip wget
 #sudo DEBIAN_FRONTEND=noninteractive apt-get update -qq < /dev/null > /dev/null
 #sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq ca-certificates jq curl apt-transport-https lsb-release gnupg nodejs git openjdk-8-jre maven unzip< /dev/null > /dev/null
 
 echo "Installing npm"
-curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
-sudo apt install nodejs
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+#curl -sL https://deb.nodesource.com/setup_15.x | sudo bash
+#sudo apt-get install nodejs
+source ~/.profile
+nvm install v14.5.0
 
 echo "Installing Azure-CLI"
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
