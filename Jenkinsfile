@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Dependencies') {
             steps {
-                sh "bash ./scripts/dependencies.sh"
+                sh "sudo bash ./scripts/dependencies.sh"
             }
         }
         stage('Terraform') {
