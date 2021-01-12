@@ -15,6 +15,7 @@ sudo apt install -y unzip wget
 
 echo "Installing npm"
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash
+sudo apt install nodejs
 
 echo "Installing Azure-CLI"
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
