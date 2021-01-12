@@ -3,27 +3,27 @@ pipeline {
     stages {
         stage('Dependencies') {
             steps {
-                sh "./scripts/dependencies.sh"
+                sh "sudo bash ./scripts/dependencies.sh"
             }
         }
         stage('Terraform') {
             steps {
-                sh "./scripts/terraform.sh"
+                sh "bash ./scripts/terraform.sh"
             }
         }
         stage('Test') {
             steps {
-                sh "./scripts/test.sh"
+                sh "bash ./scripts/test.sh"
             }
         }    
         stage('Build') {
             steps {
-                sh "./scripts/build.sh"
+                sh "bash ./scripts/build.sh"
             }
         }    
         stage('Deploy') {
             steps {
-                sh "./scripts/deploy.sh"
+                sh "bash ./scripts/deploy.sh"
             }
         }
     }
