@@ -35,9 +35,9 @@ Here is our CI pipeline:
 ![pipeline][pipeline]
 _Our CI Pipeline_
 
-Here is a more in-depth view of our Kubernetes Cluster configuration:
+Here is a more in-depth view of our Kubernetes Cluster configuration, from an end user perspective:
 ![cluster][cluster]
-
+_Configuration of a K8s cluster_
 
 ## Authors
 Joshua Cashen  \
