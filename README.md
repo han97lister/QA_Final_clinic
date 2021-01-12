@@ -31,8 +31,12 @@ A monthly estimate of cost should be made for the projects, risks should be asse
 
 ## Designs
 ### Basic Designs
-
+Here is our CI pipeline:
 ![pipeline][pipeline]
+_Our CI Pipeline_
+
+Here is a more in-depth view of our Kubernetes Cluster configuration:
+![cluster][cluster]
 
 
 ## Authors
@@ -49,3 +53,4 @@ v1.0
 Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
 
 [pipeline]: https://imgur.com/cO2YN1k.png
+[cluster]: https://imgur.com/hxL7Lxu.png
