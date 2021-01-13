@@ -30,7 +30,6 @@ metadata:
    labels:
      app: frontend      
 spec:
-   type: LoadBalancer
    ports:
      - protocol: TCP
        port: 4200
