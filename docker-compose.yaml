@@ -1,15 +1,7 @@
-  
-version: "3.7"
-services: 
-  mysql:
-    image: almathex/clinic-db:latest
-    ports:
-    - target: 3306
-      published: 3306
-      protocol: tcp
-      
-
+version: '3.7'
+services:
   backend:
+    build: ./backend
     image: almathex/backend:latest
     ports:
     - target: 9966
@@ -18,10 +10,32 @@ services:
 
 
   frontend:
+    build: ./frontend
     image: almathex/frontend:latest
     ports:
-    - target: 8080
-      published: 8080
+    - target: 4200
+      published: 4200
+      protocol: tcp
+    depends_on:
+    - backend
+
+
+  mysql:
+    build: ./mysql
+    image: almathex/clinic-db:latest
+    ports:
+    - target: 3306
+      published: 3306
+      protocol: tcp
+      
+
+  nginx:
+    build: ./nginx
+    image: almathex/nginx:latest
+    ports:
+    - target: 80
+      published: 80
       protocol: tcp
     depends_on:
     - backend 
+    - frontend   
