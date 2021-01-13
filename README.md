@@ -40,18 +40,19 @@ _Our CI Pipeline_
 **Kanban Board: Trello**  \
 Trello was used as a Kanban board for this project. It allows for 'cards' containing user stories and the product backlog, in addition to basic risks and issues assessment. Cards can be colour coded to aggregate their importance by story points or to demarcate the position of the task in the MOSCOW prioritisation.
 
+trello image here
+
 **Version Control: Git VCS**  \
 Git VCS was used for version control of this project. It permits a push/pull relationship between virtual machine and repository for portability; allows branching for rolling updates, and can be polled by Jenkins build triggers via a webhook. This ensures that changes to the code are updated on the live application as quickly as possible.
 
 **CI Server: Jenkins**  \
 Jenkins was used as a CI Server for this project. Jenkins creates project builds from a multi-stage pipeline script, and checks for updates to the source code in the Git repository. In the instance, we decided to install dependencies at the start of the pipeline, initialize Terraform to build infrastructure so that we could subsequently test, build and deploy.
 
-
 **Cloud Server: Microsoft Azure**  \
+Azure is a cloud platform for building, managing and deploying services. It is useful due to how diversifiable and flexible it is. With Azure, you can add capabilities to your existing network in a Platform as a Service (PaaS) capacity, or have Azure as the starting point for your network infrastructure as Infrastructure as a Service (IaaS). We have chosen the latter approach as a fully Azure based deployment is easier to cost due to Azure's accessible pricing systems. Azure also offers good advice in terms of cost management, ideal for tech startups.
 
-
-**Containerisation: Docker**  \
-Docker was used as a containerisation tool for this project. As Docker containers encapsulate everything an application needs to run, it enables much greater portability- as any host with Docker installed can run a Docker container, meaning applications can be shuttled between machines seamlessly. Dockerfiles also allow Gunicorn WSGI servers to run in each container, handling the load across each individual service.
+**Image builds: Docker Compose**  \
+Docker Compose was used to build images for use with Kubernetes in this project. Because Docker produces methodical and consistent image builds, which can be pushed to its in-house image repository (Dockerhub) Docker images built and pushed with docker-compose are the perfect foil for a Kubernetes pod.
 
 **Infrastructure Management: Terraform**   \
 
