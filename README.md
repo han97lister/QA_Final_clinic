@@ -48,6 +48,20 @@ Please find a screenshot below:
 
 ![risk][risk]
 
+### Back End
+
+### Front End
+
+### Deployment Log
+
+### Known Issues
+
+### Future Improvements
+
+### Expenses
+
+### Version Control
+
 
 ## Authors
 Joshua Cashen  \
