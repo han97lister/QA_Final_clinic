@@ -12,8 +12,8 @@ pipeline {
             }
         }
         //stage('Test') {
-        //    steps {
-          //      sh "bash ./scripts/test.sh"
+          //  steps {
+            //    sh "bash ./scripts/test.sh"
             //}
         //}    
         //stage('Build') {
