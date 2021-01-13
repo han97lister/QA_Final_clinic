@@ -1,39 +1,38 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql-clinic
+  name: mysql
   labels:
-    app: mysql-clinic
+    app: mysql
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mysql-clinic 
+      app: mysql
   template:
     metadata:
-      name: mysql-clinic
       labels:
-        app: mysql-clinic
+        app: mysql
     spec:
       containers:
-      - name: mysql-clinic
-        image: almathex/clinic-db
-        ports:
-          - containerPort: 3306
-
+        - name: mysql
+          image: almathex/clinic-db:latest
+          ports:
+          - name: mysql-port
+            containerPort: 3306
+          env:
+            MYSQL_DATABASE: petclinic
+            MYSQL_ROOT_PASSWORD: root   
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
-   name: mysql-clinic
-   labels:
-     app: mysql-clinic
+  name: mysql
 spec:
-   type: LoadBalancer
-   ports:
-     - protocol: TCP
-       port: 3306
-       targetPort: 3306
-   selector:
-     app: mysql-clinic
+  ports:
+  - protocol: TCP
+    port: 3306
+    targetPort: 3306
+  selector:
+    app: mysql
+---
