@@ -97,10 +97,10 @@ Kubernetes cluster required a _rollout restart_ of the deployment to run all pod
 To calculate expenses, we used the Azure pricing calculator.
 The costed components of our project are:
 
-**1x Ubuntu Linux VM of size Standard D2s_v3**: £63.15 per month*
+**1x Ubuntu Linux VM of size Standard D2s_v3**: £63.15 per month*  \
 **1x Azure Kubernetes Cluster node of size Standard D2s_v3**: £63.11 per month*
 
-* where a month is defined as a 730 hour period
+*where a month is defined as a 730 hour period
 
 **Total Cost** £126.26 per month
 
