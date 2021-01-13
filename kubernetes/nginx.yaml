@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: almathex/nginx
+        image: team4qa/nginx
         ports:
           - containerPort: 80
 
