@@ -30,7 +30,6 @@ metadata:
    labels:
      app: backend      
 spec:
-   type: LoadBalancer
    ports:
      - protocol: TCP
        port: 9966
