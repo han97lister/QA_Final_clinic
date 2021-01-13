@@ -13,19 +13,6 @@ sudo apt install -y unzip wget
 #sudo DEBIAN_FRONTEND=noninteractive apt-get update -qq < /dev/null > /dev/null
 #sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq ca-certificates jq curl apt-transport-https lsb-release gnupg nodejs git openjdk-8-jre maven unzip< /dev/null > /dev/null
 
-echo "Installing npm"
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-#curl -sL https://deb.nodesource.com/setup_15.x | sudo bash
-#sudo apt-get install nodejs
-export NVM_DIR="home/jenkins/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-source ~/.bashrc
-nvm install v14.5.0
-nvm use v14.5.0
-npm update
-npx npm-check-updates -u
-npm install
 
 echo "Installing Azure-CLI"
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
