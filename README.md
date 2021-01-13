@@ -105,6 +105,7 @@ The costed components of our project are:
 **Total Cost** £126.26 per month
 
 To improve costs, we could reserve the VM for a year (saving up to 37% in the process) once we were sure of demand and storage needs (as opposed to PAYG)
+Right-sizing the Kubernetes pods to ensure they have limits preventing them from consuming too many resources and scaling back on VM size as necessary could also save money.
 
 Here is a screenshot of the costing breakdown on Azure:
 
