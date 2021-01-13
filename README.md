@@ -12,6 +12,7 @@ Risk Assessment: https://docs.google.com/spreadsheets/d/128TcehtL_puDUwLKvUdLhTt
 
 * Brief
     * [Project Brief](#project-brief)
+    * [Our Approach](#our-approach)
 * Designs
     * [Basic Designs](#basic-designs)
 * [Risk Assessment](#risk-assessment)
