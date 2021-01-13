@@ -53,9 +53,9 @@ Jenkins was used as a CI Server for this project. Jenkins creates project builds
 **Containerisation: Docker**  \
 Docker was used as a containerisation tool for this project. As Docker containers encapsulate everything an application needs to run, it enables much greater portability- as any host with Docker installed can run a Docker container, meaning applications can be shuttled between machines seamlessly. Dockerfiles also allow Gunicorn WSGI servers to run in each container, handling the load across each individual service.
 
-**Infrastructure Management: Terraform**  \
+**Infrastructure Management: Terraform**   \
 
-**Orchestration Tool: Kubernetes**  \
+**Orchestration Tool: Kubernetes**   \
 
 **Reverse Proxy: NGINX**  \
 NGINX reverse proxies perform load balancing. This assists with the distribution of requests across backend servers (such as within the worker machines of a Swarm. If one server goes down, NGINX will reroute requests to a different server in accordance with the routing policy. Serving the application to the HTTP port 80 of an NGINX machine means that all other ports can be closed on other virtual machines in the Swarm, increasing security.
