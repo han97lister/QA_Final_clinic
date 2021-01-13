@@ -20,9 +20,6 @@ spec:
           ports:
           - name: mysql-port
             containerPort: 3306
-          env:
-            MYSQL_DATABASE: petclinic
-            MYSQL_ROOT_PASSWORD: root   
 ---
 apiVersion: v1
 kind: Service
