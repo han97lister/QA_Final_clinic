@@ -11,11 +11,11 @@ pipeline {
                 sh "bash ./scripts/terraform.sh"
             }
         }
-        //stage('Test') {
-          //  steps {
-            //    sh "bash ./scripts/test.sh"
-            //}
-        //}    
+        stage('Test') {
+            steps {
+                sh "bash ./scripts/test.sh"
+            }
+        }    
         //stage('Build') {
          //   steps {
            //     sh "bash ./scripts/build.sh"
