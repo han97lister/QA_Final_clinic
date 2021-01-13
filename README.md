@@ -56,7 +56,11 @@ Docker Compose was used to build images for use with Kubernetes in this project.
 
 **Infrastructure Management: Terraform**   \
 
+Terraform was used to create and modify the infrastructure of the project. Provisioning and automating the infrastructure allows for more efficient delivery of software aligned with the DevOps methodology. In the case of this project, Terraform provisions the Kubernetes cluster, its associated node; and the Azure resource group.
+
 **Orchestration Tool: Kubernetes**   \
+
+Kubernetes is the most fully realised orchestration tool on the market, making it preferable to Docker Swarm as it is 'aware' of aspects of the project beyond the life cycle of the container and has a more fully fleshed out set of control commands. In our project, we use discrete YAML manifests for our MySQL pod, NGINX load balancer, Angular front-end and REST API back-end, as this enables a complete and uncluttered configuration and orchestration, making issue diagnoses easier.
 
 **Reverse Proxy: NGINX**  \
 NGINX reverse proxies perform load balancing. This assists with the distribution of requests across backend servers (such as within the worker machines of a Swarm. If one server goes down, NGINX will reroute requests to a different server in accordance with the routing policy. Serving the application to the HTTP port 80 of an NGINX machine means that all other ports can be closed on other virtual machines in the Swarm, increasing security.
