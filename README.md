@@ -37,7 +37,8 @@ _Our CI Pipeline_
 
 Here is a more in-depth view of our Kubernetes Cluster configuration, from an end user perspective:
 ![cluster][cluster]  \
-_Configuration of a K8s cluster_
+_Configuration of a K8s cluster_  
+It shows a clear illustration of how all traffic is directed towards our NGINX load balancer and reverse proxy in order to delegate accordingly to our front-end and back-end pods which are able to store data within the mysql database. 
 
 ### Risk Assessment
 
@@ -62,5 +63,5 @@ v1.0
 Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
 
 [pipeline]: https://imgur.com/cO2YN1k.png
-[cluster]: https://imgur.com/hxL7Lxu.png
+[cluster]: https://i.imgur.com/wUBId9p.png
 [risk]: https://imgur.com/ogn761e.png
