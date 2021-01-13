@@ -36,6 +36,7 @@ A monthly estimate of cost should be made for the projects, risks should be asse
 Here is our CI pipeline:
 ![pipeline][pipeline]
 _Our CI Pipeline_
+
 **Kanban Board: Trello**  \
 Trello was used as a Kanban board for this project. It allows for 'cards' containing user stories and the product backlog, in addition to basic risks and issues assessment. Cards can be colour coded to aggregate their importance by story points or to demarcate the position of the task in the MOSCOW prioritisation.
 
