@@ -79,15 +79,37 @@ Please find a screenshot below:
 
 ### Back End
 
+The back end was built using Maven as a build tool. It is a RESTful API application which communicates with the Angular front end.
+
 ### Front End
 
 ### Deployment Log
 
 ### Known Issues
 
+Kubernetes cluster required a _rollout restart_ of the deployment to run all pods successfully and deploy.
+
+
 ### Future Improvements
 
 ### Expenses
+
+To calculate expenses, we used the Azure pricing calculator.
+The costed components of our project are:
+
+**1x Ubuntu Linux VM of size Standard D2s_v3**: £63.11 per month*
+**1x Azure Kubernetes Cluster node of size Standard D2s_v3**: £63.11 per month*
+
+* where a month is defined as a 730 hour period
+
+**Total Cost** £126.22 per month
+
+To improve costs, we could reserve the VM for a year (saving up to 37% in the process) once we were sure of demand and storage needs (as opposed to PAYG)
+
+Here is a screenshot of the costing breakdown on Azure:
+
+![costing][costing]
+
 
 ### Version Control
 
@@ -108,3 +130,4 @@ Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
 [pipeline]: https://imgur.com/cO2YN1k.png
 [cluster]: https://i.imgur.com/wUBId9p.png
 [risk]: https://imgur.com/ogn761e.png
+[costing]: https://imgur.com/wBZNkpm.png
