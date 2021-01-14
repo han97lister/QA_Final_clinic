@@ -3,7 +3,6 @@
 
 # Resources
 
-Website: <space><space>\
 Presentation: https://docs.google.com/presentation/d/18tSl0cTL2yxslPznOd3z3h_VHpsLJjPHtHvdqo6eRyo/edit?usp=sharing <space><space>\
 Project Board: https://trello.com/b/V0fSC2cp/final-group-project <space><space>\
 Risk Assessment: https://docs.google.com/spreadsheets/d/128TcehtL_puDUwLKvUdLhTt__cj8NS8wpZU_gw_jgBE/edit?usp=sharing  
@@ -70,6 +69,8 @@ The cluster diagram illustrates how all traffic is directed towards our NGINX lo
 
 We have performed a full risk assessment before attempting deployment. Those risks which are not currently mitigated and require revisiting will be revisited after deployment.
 A link to our risk assessment (pre-revisit) is available in the Resources section.
+Unfortunately, we were not able to action a PersistentVolume or obscure exposed secrets in the Kubernetes YAML when we revisited the risk assessment.
+
 Please find a screenshot below:
 
 ![risk][risk]
