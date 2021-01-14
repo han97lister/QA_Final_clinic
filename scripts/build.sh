@@ -1,4 +1,5 @@
 #! /bin/bash
 
-docker-compose build
-docker-compose push
+sudo docker login
+sudo docker-compose build
+sudo docker-compose push
