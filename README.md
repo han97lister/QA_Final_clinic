@@ -520,6 +520,10 @@ Here is a screenshot of the costing breakdown on Azure:
 For a diligent solution to this project, we operated within a feature-branch model, with each branch pertaining to a particular component software utilised within the project.
 Our branches existed in parallel and were merged at relevant points as we built towards our ultimate solution.
 
+Our feature branches were **Dockerise** for Docker, **mysql** for MySQL, **Kubernetes** for Kubernetes and **Jenkins** for Jenkins.
+As Terraform creates the infrastructure, **main.tf** was implemented on the main branch.
+A **test** branch was configured for unit testing, in addition to an overarching **develop** branch to merge the changes into and act as a release pipeline.
+
 
 ## Authors
 Joshua Cashen  \
