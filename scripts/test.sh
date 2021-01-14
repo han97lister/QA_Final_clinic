@@ -1,7 +1,5 @@
 #! /bin/bash
 
 cd frontend
-ng test
-
-#ng serve
-#ng e2e
+sudo docker build -f test/Dockerfile -t test .
+sudo docker run --name test test 

@@ -2,5 +2,5 @@
 
 cd kubernetes
 ./stop.sh
-./start.sh
+#./start.sh
 cd ..
