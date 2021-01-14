@@ -17,8 +17,6 @@ Risk Assessment: https://docs.google.com/spreadsheets/d/128TcehtL_puDUwLKvUdLhTt
     * [Basic Designs](#basic-designs)
 * [Risk Assessment](#risk-assessment)
 * [Trello Board](#trello-board)
-* [Back End](#back-end)
-* [Front End](#front-end)
 * [Deployment Log](#deployment-log)
 * [Known Issues](#known-issues)
 * [Future Improvements](#future-improvements)
@@ -77,11 +75,6 @@ Please find a screenshot below:
 
 ![risk][risk]
 
-### Back End
-
-The back end was built using Maven as a build tool. It is a RESTful API application which communicates with the Angular front end.
-
-### Front End
 
 ### Deployment Log
 
