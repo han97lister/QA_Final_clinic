@@ -1,6 +1,6 @@
 #! /bin/bash
 
 cd kubernetes
-./stop.sh
+#./stop.sh
 ./start.sh
 cd ..
