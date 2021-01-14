@@ -517,6 +517,11 @@ Our feature branches were **Dockerise** for Docker, **mysql** for MySQL, **Kuber
 As Terraform creates the infrastructure, **main.tf** was implemented on the main branch.
 A **test** branch was configured for unit testing, in addition to an overarching **develop** branch to merge the changes into and act as a release pipeline.
 
+![fbranch][fbranch]
+
+As you can see, the features have been merged into the development branch, and the development branch merged into main as a release.
+The test branch is not merged as it runs parallel to main for unit testing and does not contain new features.
+
 
 ## Authors
 Joshua Cashen  \
@@ -536,3 +541,4 @@ Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
 [risk]: https://imgur.com/ogn761e.png
 [costing]: https://imgur.com/wBZNkpm.png
 [trello]: https://imgur.com/MuKtvvw.png
+[fbranch]: https://imgur.com/Gnpb6jA.png
