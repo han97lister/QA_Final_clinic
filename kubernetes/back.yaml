@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: almathex/backend
+        image: h15t3r5im5/backend
         ports:
           - containerPort: 9966
 

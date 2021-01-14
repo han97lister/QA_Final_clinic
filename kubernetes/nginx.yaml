@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: almathex/nginx
+        image: h15t3r5im5/nginx
         ports:
           - containerPort: 80
 
