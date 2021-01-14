@@ -17,8 +17,6 @@ Risk Assessment: https://docs.google.com/spreadsheets/d/128TcehtL_puDUwLKvUdLhTt
     * [Basic Designs](#basic-designs)
 * [Risk Assessment](#risk-assessment)
 * [Trello Board](#trello-board)
-* [Back End](#back-end)
-* [Front End](#front-end)
 * [Deployment Log](#deployment-log)
 * [Known Issues](#known-issues)
 * [Future Improvements](#future-improvements)
@@ -61,7 +59,7 @@ Terraform was used to create and modify the infrastructure of the project. Provi
 Kubernetes is the most fully realised orchestration tool on the market, making it preferable to Docker Swarm as it is 'aware' of aspects of the project beyond the life cycle of the container and has a more fully fleshed out set of control commands. In our project, we use discrete YAML manifests for our MySQL pod, NGINX load balancer, Angular front-end and REST API back-end, as this enables a complete and uncluttered configuration and orchestration, making issue diagnoses easier.
 
 **Reverse Proxy: NGINX**  \
-NGINX reverse proxies perform load balancing. This assists with the distribution of requests across backend servers (such as within the worker machines of a Swarm. If one server goes down, NGINX will reroute requests to a different server in accordance with the routing policy. Serving the application to the HTTP port 80 of an NGINX machine means that all other ports can be closed on other virtual machines in the Swarm, increasing security.
+NGINX reverse proxies perform load balancing. This assists with the distribution of requests across backend servers (such as within the Kubernetes pods). If one server goes down, NGINX will reroute requests to a different server in accordance with the routing policy. Serving the application to the HTTP port 80 of an NGINX machine means that all other pods can have limits set such that they can't be communicated with externally.
 
 
 Here is a more in-depth view of our Kubernetes Cluster configuration, from an end user perspective:
@@ -77,11 +75,6 @@ Please find a screenshot below:
 
 ![risk][risk]
 
-### Back End
-
-The back end was built using Maven as a build tool. It is a RESTful API application which communicates with the Angular front end.
-
-### Front End
 
 ### Deployment Log
 
@@ -484,9 +477,16 @@ Finished: SUCCESS
 ### Known Issues
 
 Kubernetes cluster required a _rollout restart_ of the deployment to run all pods successfully and deploy.
+Our secrets are currently exposed in the MySQL Kubernetes YAML manifest. Steps will be taken to secure these in line with the risk assessment.
+Docker images are presently not versioned, so emergency rollbacks to a former version would be difficult to accurately perform.
 
 
 ### Future Improvements
+
+Versioning of images for easy rollback to previous versions. Could be done with an IMAGE_NUMBER variable, for example, which increments on each image build.
+We haven't executed end-to-end tests in this project (with Protractor) we have only executed unit tests with Karma, so testing coverage is not too optimal at present.
+Some dependencies have been removed from our dependencies.sh as we had to manually install them in troubleshooting. 
+Automating these dependencies is important for the robustness of future deployments.
 
 ### Expenses
 
@@ -509,6 +509,13 @@ Here is a screenshot of the costing breakdown on Azure:
 
 
 ### Version Control
+
+For a diligent solution to this project, we operated within a feature-branch model, with each branch pertaining to a particular component software utilised within the project.
+Our branches existed in parallel and were merged at relevant points as we built towards our ultimate solution.
+
+Our feature branches were **Dockerise** for Docker, **mysql** for MySQL, **Kubernetes** for Kubernetes and **Jenkins** for Jenkins.
+As Terraform creates the infrastructure, **main.tf** was implemented on the main branch.
+A **test** branch was configured for unit testing, in addition to an overarching **develop** branch to merge the changes into and act as a release pipeline.
 
 
 ## Authors
