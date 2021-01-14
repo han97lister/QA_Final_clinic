@@ -3,7 +3,6 @@
 
 # Resources
 
-Website: <space><space>\
 Presentation: https://docs.google.com/presentation/d/18tSl0cTL2yxslPznOd3z3h_VHpsLJjPHtHvdqo6eRyo/edit?usp=sharing <space><space>\
 Project Board: https://trello.com/b/V0fSC2cp/final-group-project <space><space>\
 Risk Assessment: https://docs.google.com/spreadsheets/d/128TcehtL_puDUwLKvUdLhTt__cj8NS8wpZU_gw_jgBE/edit?usp=sharing  
@@ -16,7 +15,6 @@ Risk Assessment: https://docs.google.com/spreadsheets/d/128TcehtL_puDUwLKvUdLhTt
 * Designs
     * [Basic Designs](#basic-designs)
 * [Risk Assessment](#risk-assessment)
-* [Trello Board](#trello-board)
 * [Deployment Log](#deployment-log)
 * [Known Issues](#known-issues)
 * [Future Improvements](#future-improvements)
@@ -71,6 +69,8 @@ The cluster diagram illustrates how all traffic is directed towards our NGINX lo
 
 We have performed a full risk assessment before attempting deployment. Those risks which are not currently mitigated and require revisiting will be revisited after deployment.
 A link to our risk assessment (pre-revisit) is available in the Resources section.
+Unfortunately, we were not able to action a PersistentVolume or obscure exposed secrets in the Kubernetes YAML when we revisited the risk assessment.
+
 Please find a screenshot below:
 
 ![risk][risk]
@@ -487,6 +487,7 @@ Versioning of images for easy rollback to previous versions. Could be done with 
 We haven't executed end-to-end tests in this project (with Protractor) we have only executed unit tests with Karma, so testing coverage is not too optimal at present.
 Some dependencies have been removed from our dependencies.sh as we had to manually install them in troubleshooting. 
 Automating these dependencies is important for the robustness of future deployments.
+A permanent DNS name as at present automated kubectl commands cause the load balancer IP to change upon deployment.
 
 ### Expenses
 
