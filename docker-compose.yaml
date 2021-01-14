@@ -2,7 +2,7 @@ version: '3.7'
 services:
   backend:
     build: ./backend
-    image: h15t3r5im5/backend:latest
+    image: almathex/backend:latest
     ports:
     - target: 9966
       published: 9966
@@ -11,7 +11,7 @@ services:
 
   frontend:
     build: ./frontend
-    image: h15t3r5im5/frontend:latest
+    image: almathex/frontend:latest
     ports:
     - target: 8080
       published: 8080
@@ -22,7 +22,7 @@ services:
 
   mysql:
     build: ./mysql
-    image: h15t3r5im5/clinic-db:latest
+    image: almathex/clinic-db:latest
     ports:
     - target: 3306
       published: 3306
@@ -34,7 +34,7 @@ services:
 
   nginx:
     build: ./nginx
-    image: h15t3r5im5/nginx:latest
+    image: almathex/nginx:latest
     ports:
     - target: 80
       published: 80

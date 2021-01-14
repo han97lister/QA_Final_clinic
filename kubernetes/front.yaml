@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: h15t3r5im5/frontend
+        image: almathex/frontend
         ports:
           - containerPort: 8080
 

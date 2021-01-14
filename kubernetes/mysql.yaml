@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: h15t3r5im5/clinic-db:latest
+          image: almathex/clinic-db:latest
           ports:
           - name: mysql-port
             containerPort: 3306
