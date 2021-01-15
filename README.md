@@ -28,6 +28,10 @@ Website: http://20.49.151.137
 This project is a group challenge to work to a deliverable with time constraints, providing a robust deployment with consistent method and CI pipeline.
 A monthly estimate of cost should be made for the projects, risks should be assessed and issues and improvements discussed. We should implement a Webhook with GitSCM to enable rolling updates when code is pushed to the repository. We should justify our usage of chosen technologies; and provide multiple environment support for both testing and live.
 
+### Our Approach
+
+As a group, we decided to choose roles based on our strengths so that everyone felt able to contribute equally towards this project. Our goal was to implement deployment for the pet clinic app and we thought that main areas to focus on would be building the infrastructure with Terraform, containerising with Docker,  building a multi-stage pipeline script with Jenkins, and deploying with Kubernetes. Therefore, Josh managed Terraform, Isaac focused on Docker, I scripted the Jenkins Pipeline and Alex managed Kubernetes.  In terms of working in an agile and scrum manor, we believed us all to be part of the development team and also business analysts. As project manager, Isaac was in charge of estimating costs and assessing risks. I ensured we worked in an agile way as Scrum Manager by maintaining the Kanban Board which was organised into sprints for each day. We also held sprint retrospective meetings which allowed us to inspect the last sprint, identifying the positives and negatives and thus clarify the plan for that day. Alex was the Product Owner as he was the main instrigater in ensuring our app deployed successfully.
+
 ## Designs
 ### Basic Designs
 Here is our CI pipeline:
