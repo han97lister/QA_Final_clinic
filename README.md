@@ -43,7 +43,8 @@ Trello was used as a Kanban board for this project. It allows for 'cards' contai
 Git VCS was used for version control of this project. It permits a push/pull relationship between virtual machine and repository for portability; allows branching for rolling updates, and can be polled by Jenkins build triggers via a webhook. This ensures that changes to the code are updated on the live application as quickly as possible.
 
 **CI Server: Jenkins**  \
-Jenkins was used as a CI Server for this project. Jenkins creates project builds from a multi-stage pipeline script, and checks for updates to the source code in the Git repository. In the instance, we decided to install dependencies at the start of the pipeline, initialize Terraform to build infrastructure so that we could subsequently test, build and deploy.
+Jenkins was used as a CI Server for this project. Jenkins creates project builds from a multi-stage pipeline script, and checks for updates to the source code in the Git repository. In the instance, we decided to install dependencies at the start of the pipeline, initialize Terraform to build infrastructure so that we could subsequently test, build and deploy. Here is a screenshot for our application successfully deploying:  
+![jpipeline][jpipeline]
 
 **Cloud Server: Microsoft Azure**  \
 Azure is a cloud platform for building, managing and deploying services. It is useful due to how diversifiable and flexible it is. With Azure, you can add capabilities to your existing network in a Platform as a Service (PaaS) capacity, or have Azure as the starting point for your network infrastructure as Infrastructure as a Service (IaaS). We have chosen the latter approach as a fully Azure based deployment is easier to cost due to Azure's accessible pricing systems. Azure also offers good advice in terms of cost management, ideal for tech startups.
@@ -538,6 +539,7 @@ v1.0
 
 Thanks to Ben Hesketh and QA Community for assistance meeting the project brief.
 
+[jpipeline]: https://i.imgur.com/346ekzQ.png
 [pipeline]: https://imgur.com/cO2YN1k.png
 [cluster]: https://i.imgur.com/wUBId9p.png
 [risk]: https://imgur.com/ogn761e.png
